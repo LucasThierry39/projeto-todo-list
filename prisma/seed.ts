@@ -16,6 +16,13 @@ async function seed(){
             }
         }
     });
+
+    await prisma.user.create({
+        data:{
+            name: "Emenergildo Eustáquio Gomes Filho",
+            email: "gildao.surfista11@hotm"
+        }
+    });
 }
 
 seed();
